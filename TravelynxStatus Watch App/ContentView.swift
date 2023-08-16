@@ -7,10 +7,14 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     @State private var TrainType: String = "Train Type"
     @State private var Destination: String = "Destination"
     @State private var Status: String = "Status"
+    @State private var autorefresh: Bool = true
+    @State private var timer: Timer?
+
     
     func fetchDataFromServer() {
         if let url = URL(string: "https://travelynx.de/api/v1/status/1007-397766d5-2e36-484b-8c60-e70be257c47a") {
@@ -22,34 +26,43 @@ struct ContentView: View {
                 }
                 
                 if let data = data {
-                                if let jsonString = String(data: data, encoding: .utf8) {
-                                    //print("Raw JSON: \(jsonString)") // Print the raw JSON data
-                                    
+
                                     do {
+                                        
                                         let decoder = JSONDecoder()
                                         let checkIn = try decoder.decode(CheckIn.self, from: data)
-                                        //print("Decoded CheckIn: \(checkIn)")
+                                        
                                         if (checkIn.train.line == nil) {
+                                            
                                             self.TrainType = checkIn.train.type + " " + checkIn.train.no
+                                            
                                         } else {
+                                            
                                             self.TrainType = checkIn.train.type + (checkIn.train.line != nil ? " " + checkIn.train.line! : "")
+                                            
                                         }
+                                        
                                         self.Destination = "nach "+checkIn.toStation.name
+                                        
                                         if (checkIn.checkedIn == true) {
-                                            self.Status = "eingecheckt"
+                                            
+                                            self.Status = "Unterwegs mit:"
+                                            
                                         } else {
-                                            self.Status = "nicht eingecheckt"
+                                            
+                                            self.Status = "Zuletzt gesehen in:"
+                                            
                                         }
                                     } catch {
                                         print("Error decoding data: \(error)")
                                     }
-                                }
                             }
             }
             
-            print("Starting network request...")
             task.resume()
+            
         }
+        
     }
 
     
@@ -64,9 +77,13 @@ struct ContentView: View {
                 .font(.system(size: 18))
                 .fontWeight(.bold)
                 .offset(y: -26)
-            
         }
+        
         VStack(alignment: .leading) {
+            Text(Status)
+                .font(.system(size: 12))
+                .fontWeight(.regular)
+                .offset(x:10 ,y:-10)
             Text(TrainType)
                 .font(.system(size: 20))
                 .fontWeight(.bold)
@@ -75,17 +92,21 @@ struct ContentView: View {
                 .font(.system(size: 12))
                 .fontWeight(.regular)
                 .offset(x:10)
-            Text(Status)
-                .font(.system(size: 12))
-                .fontWeight(.regular)
-                .offset(x:10 ,y:10)
-            Button("refresh") { fetchDataFromServer() }
+            Button("Refresh") { fetchDataFromServer() }
                 .offset(x: 0, y: 35)
+
+            
         }
+        
         .onAppear {
             fetchDataFromServer()
+            Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { _ in
+                            fetchDataFromServer()
+            }
         }
+        
     }
+
 }
 
 

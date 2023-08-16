@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E6BF12642A8C00BB00132EC3 /* TravelynxStatus Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E6BF12632A8C00BB00132EC3 /* TravelynxStatus Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E6BF12642A8C00BB00132EC3 /* Travelynx Status.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E6BF12632A8C00BB00132EC3 /* Travelynx Status.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E6BF12692A8C00BB00132EC3 /* TravelynxStatusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF12682A8C00BB00132EC3 /* TravelynxStatusApp.swift */; };
 		E6BF126B2A8C00BB00132EC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BF126A2A8C00BB00132EC3 /* ContentView.swift */; };
 		E6BF126D2A8C00BC00132EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6BF126C2A8C00BC00132EC3 /* Assets.xcassets */; };
@@ -15,20 +15,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		E6BF12652A8C00BB00132EC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6BF12572A8C00BB00132EC3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E6BF12622A8C00BB00132EC3;
-			remoteInfo = "TravelynxStatus Watch App";
-		};
-		E6BF12762A8C00BC00132EC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E6BF12572A8C00BB00132EC3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E6BF12622A8C00BB00132EC3;
-			remoteInfo = "TravelynxStatus Watch App";
-		};
-		E6BF12802A8C00BC00132EC3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E6BF12572A8C00BB00132EC3 /* Project object */;
 			proxyType = 1;
@@ -44,7 +30,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				E6BF12642A8C00BB00132EC3 /* TravelynxStatus Watch App.app in Embed Watch Content */,
+				E6BF12642A8C00BB00132EC3 /* Travelynx Status.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,30 +39,14 @@
 
 /* Begin PBXFileReference section */
 		E6BF125D2A8C00BB00132EC3 /* TravelynxStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelynxStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6BF12632A8C00BB00132EC3 /* TravelynxStatus Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TravelynxStatus Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BF12632A8C00BB00132EC3 /* Travelynx Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travelynx Status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6BF12682A8C00BB00132EC3 /* TravelynxStatusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelynxStatusApp.swift; sourceTree = "<group>"; };
 		E6BF126A2A8C00BB00132EC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E6BF126C2A8C00BC00132EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E6BF12752A8C00BC00132EC3 /* TravelynxStatus Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TravelynxStatus Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6BF127F2A8C00BC00132EC3 /* TravelynxStatus Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TravelynxStatus Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E6BF12602A8C00BB00132EC3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E6BF12722A8C00BC00132EC3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E6BF127C2A8C00BC00132EC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,9 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				E6BF125D2A8C00BB00132EC3 /* TravelynxStatus.app */,
-				E6BF12632A8C00BB00132EC3 /* TravelynxStatus Watch App.app */,
-				E6BF12752A8C00BC00132EC3 /* TravelynxStatus Watch AppTests.xctest */,
-				E6BF127F2A8C00BC00132EC3 /* TravelynxStatus Watch AppUITests.xctest */,
+				E6BF12632A8C00BB00132EC3 /* Travelynx Status.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,44 +117,8 @@
 			);
 			name = "TravelynxStatus Watch App";
 			productName = "TravelynxStatus Watch App";
-			productReference = E6BF12632A8C00BB00132EC3 /* TravelynxStatus Watch App.app */;
+			productReference = E6BF12632A8C00BB00132EC3 /* Travelynx Status.app */;
 			productType = "com.apple.product-type.application";
-		};
-		E6BF12742A8C00BC00132EC3 /* TravelynxStatus Watch AppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E6BF12902A8C00BC00132EC3 /* Build configuration list for PBXNativeTarget "TravelynxStatus Watch AppTests" */;
-			buildPhases = (
-				E6BF12712A8C00BC00132EC3 /* Sources */,
-				E6BF12722A8C00BC00132EC3 /* Frameworks */,
-				E6BF12732A8C00BC00132EC3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E6BF12772A8C00BC00132EC3 /* PBXTargetDependency */,
-			);
-			name = "TravelynxStatus Watch AppTests";
-			productName = "TravelynxStatus Watch AppTests";
-			productReference = E6BF12752A8C00BC00132EC3 /* TravelynxStatus Watch AppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		E6BF127E2A8C00BC00132EC3 /* TravelynxStatus Watch AppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E6BF12932A8C00BC00132EC3 /* Build configuration list for PBXNativeTarget "TravelynxStatus Watch AppUITests" */;
-			buildPhases = (
-				E6BF127B2A8C00BC00132EC3 /* Sources */,
-				E6BF127C2A8C00BC00132EC3 /* Frameworks */,
-				E6BF127D2A8C00BC00132EC3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E6BF12812A8C00BC00132EC3 /* PBXTargetDependency */,
-			);
-			name = "TravelynxStatus Watch AppUITests";
-			productName = "TravelynxStatus Watch AppUITests";
-			productReference = E6BF127F2A8C00BC00132EC3 /* TravelynxStatus Watch AppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -203,14 +135,6 @@
 					};
 					E6BF12622A8C00BB00132EC3 = {
 						CreatedOnToolsVersion = 14.3.1;
-					};
-					E6BF12742A8C00BC00132EC3 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = E6BF12622A8C00BB00132EC3;
-					};
-					E6BF127E2A8C00BC00132EC3 = {
-						CreatedOnToolsVersion = 14.3.1;
-						TestTargetID = E6BF12622A8C00BB00132EC3;
 					};
 				};
 			};
@@ -229,8 +153,6 @@
 			targets = (
 				E6BF125C2A8C00BB00132EC3 /* TravelynxStatus */,
 				E6BF12622A8C00BB00132EC3 /* TravelynxStatus Watch App */,
-				E6BF12742A8C00BC00132EC3 /* TravelynxStatus Watch AppTests */,
-				E6BF127E2A8C00BC00132EC3 /* TravelynxStatus Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,20 +173,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6BF12732A8C00BC00132EC3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E6BF127D2A8C00BC00132EC3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -277,20 +185,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6BF12712A8C00BC00132EC3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E6BF127B2A8C00BC00132EC3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -298,16 +192,6 @@
 			isa = PBXTargetDependency;
 			target = E6BF12622A8C00BB00132EC3 /* TravelynxStatus Watch App */;
 			targetProxy = E6BF12652A8C00BB00132EC3 /* PBXContainerItemProxy */;
-		};
-		E6BF12772A8C00BC00132EC3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E6BF12622A8C00BB00132EC3 /* TravelynxStatus Watch App */;
-			targetProxy = E6BF12762A8C00BC00132EC3 /* PBXContainerItemProxy */;
-		};
-		E6BF12812A8C00BC00132EC3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E6BF12622A8C00BB00132EC3 /* TravelynxStatus Watch App */;
-			targetProxy = E6BF12802A8C00BC00132EC3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -367,6 +251,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Debug;
 		};
@@ -418,6 +303,7 @@
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Release;
 		};
@@ -429,9 +315,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TravelynxStatus Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = CSZFVLPCD9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = TravelynxStatus;
+				INFOPLIST_FILE = "TravelynxStatus-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Travelynx Status";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,7 +328,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.1lola.TravelynxStatus.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Travelynx Status";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -458,9 +346,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TravelynxStatus Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = CSZFVLPCD9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = TravelynxStatus;
+				INFOPLIST_FILE = "TravelynxStatus-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Travelynx Status";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -469,7 +359,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.1lola.TravelynxStatus.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Travelynx Status";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -486,6 +376,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CSZFVLPCD9;
 				INFOPLIST_KEY_CFBundleDisplayName = TravelynxStatus;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.1lola.TravelynxStatus;
@@ -501,6 +392,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CSZFVLPCD9;
 				INFOPLIST_KEY_CFBundleDisplayName = TravelynxStatus;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.1lola.TravelynxStatus;
@@ -508,86 +400,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E6BF12912A8C00BC00132EC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.1lola.TravelynxStatus-Watch-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelynxStatus Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TravelynxStatus Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 9.4;
-			};
-			name = Debug;
-		};
-		E6BF12922A8C00BC00132EC3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.1lola.TravelynxStatus-Watch-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravelynxStatus Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TravelynxStatus Watch App";
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 9.4;
-			};
-			name = Release;
-		};
-		E6BF12942A8C00BC00132EC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.1lola.TravelynxStatus-Watch-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "TravelynxStatus Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 9.4;
-			};
-			name = Debug;
-		};
-		E6BF12952A8C00BC00132EC3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "me.1lola.TravelynxStatus-Watch-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "TravelynxStatus Watch App";
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Release;
 		};
@@ -617,24 +429,6 @@
 			buildConfigurations = (
 				E6BF128E2A8C00BC00132EC3 /* Debug */,
 				E6BF128F2A8C00BC00132EC3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E6BF12902A8C00BC00132EC3 /* Build configuration list for PBXNativeTarget "TravelynxStatus Watch AppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E6BF12912A8C00BC00132EC3 /* Debug */,
-				E6BF12922A8C00BC00132EC3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E6BF12932A8C00BC00132EC3 /* Build configuration list for PBXNativeTarget "TravelynxStatus Watch AppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E6BF12942A8C00BC00132EC3 /* Debug */,
-				E6BF12952A8C00BC00132EC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
