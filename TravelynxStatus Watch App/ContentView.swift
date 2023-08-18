@@ -15,6 +15,12 @@ struct ContentView: View {
     @State private var autorefresh: Bool = true
     @State private var timer: Timer?
 
+    func formatDate(_ timestamp: Int) -> String {
+            let date = Date(timeIntervalSince1970: TimeInterval(timestamp))
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "dd.MM.YYYY"
+            return dateFormatter.string(from: date)
+        }
     
     func fetchDataFromServer() {
         if let url = URL(string: "https://travelynx.de/api/v1/status/1007-397766d5-2e36-484b-8c60-e70be257c47a") {
@@ -50,7 +56,7 @@ struct ContentView: View {
                                             
                                         } else {
                                             
-                                            self.Status = "Zuletzt gesehen in:"
+                                            self.Status = "Zuletzt gesehen am " + formatDate(checkIn.fromStation.realTime)
                                             
                                         }
                                     } catch {
@@ -68,7 +74,7 @@ struct ContentView: View {
     
     var body: some View {
        
-        HStack(spacing:10){
+        HStack(alignment: .center,spacing:10){
             Image(systemName: "tram.fill")
                 .font(.system(size: 13))
                 .foregroundColor(.indigo)
@@ -83,15 +89,15 @@ struct ContentView: View {
             Text(Status)
                 .font(.system(size: 12))
                 .fontWeight(.regular)
-                .offset(x:10 ,y:-10)
+                .offset(x:3 ,y:-10)
             Text(TrainType)
                 .font(.system(size: 20))
                 .fontWeight(.bold)
-                .offset(x:10)
+                .offset(x:3)
             Text(Destination)
                 .font(.system(size: 12))
                 .fontWeight(.regular)
-                .offset(x:10)
+                .offset(x:3)
             Button("Refresh") { fetchDataFromServer() }
                 .offset(x: 0, y: 35)
 
